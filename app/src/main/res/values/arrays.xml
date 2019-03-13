@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alcholAVG">
+        <item>소주 3잔 이하</item>
+        <item>소주 반병</item>
+        <item>소주 한병</item>
+        <item>소주 두병</item>
+    </string-array>
+</resources>

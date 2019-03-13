@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alchol">
+        <item>소주</item>
+        <item>맥주</item>
+        <item>양주</item>
+        <item>와인</item>
+    </string-array>
+</resources>
