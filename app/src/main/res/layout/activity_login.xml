@@ -29,13 +29,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="5">
+
             <EditText
                 android:id="@+id/loginID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint=" ID"
                 android:drawableStart="@drawable/ic_person_outline_black_24dp"
-                android:drawableLeft="@drawable/ic_person_outline_black_24dp"/>
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:hint=" ID" />
 
             <EditText
                 android:id="@+id/loginPW"
@@ -63,7 +64,7 @@
         android:orientation="horizontal">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/login_checkBox"
             android:layout_width="161dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -71,7 +72,7 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/findID"
             android:layout_width="79dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -81,7 +82,7 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/findPW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
