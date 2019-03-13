@@ -5,5 +5,6 @@
         <item>소주 반병</item>
         <item>소주 한병</item>
         <item>소주 두병</item>
+        <item>소주 두병 이상</item>
     </string-array>
 </resources>

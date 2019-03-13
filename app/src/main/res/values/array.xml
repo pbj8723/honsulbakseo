@@ -4,6 +4,8 @@
         <item>소주</item>
         <item>맥주</item>
         <item>양주</item>
+        <item>막걸리</item>
         <item>와인</item>
+        <item>기타</item>
     </string-array>
 </resources>

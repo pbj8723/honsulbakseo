@@ -122,12 +122,11 @@
                     android:id="@+id/recipe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="ex) 예시용 레시피
-  1. 메로나를 컵에 넣습니다.
-  2. 소주와 사이다를 1:4 비율로 넣습니다.
-  3. 메로나를 돌려가며 녹여줍니다.
-  4. 숟가락으로 위에 거품을 걷어줍니다.
-  5 완성!"
+                    android:hint="ex) 예시용 레시피 \n1. 메로나를 컵에 넣습니다.
+  \n2. 소주와 사이다를 1:4 비율로 넣습니다.
+  \n3. 메로나를 돌려가며 녹여줍니다.
+  \n4. 숟가락으로 위에 거품을 걷어줍니다.
+  \n5 완성!"
                     android:ems="10"
                     android:inputType="textPersonName" />
             </LinearLayout>
@@ -154,8 +153,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="ex) 집에서 간단하고 맛있게 만들 수 있는 칵테일이다.
-  도수가 낮다고 빠르게 마시다보면 금방 취해있을 수 있으니 조심하자.
-  술이 써서 못 먹거나, 가볍고 맛있게 먹고 싶은 사람들에게 추천한다."
+  \n 도수가 낮다고 빠르게 마시다보면 금방 취해있을 수 있으니 조심하자.
+  \n 술이 써서 못 먹거나, 가볍고 맛있게 먹고 싶은 사람들에게 추천한다."
                     android:ems="10"
                     android:inputType="textPersonName" />
             </LinearLayout>

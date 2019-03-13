@@ -4,219 +4,283 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="238dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginLeft="97dp"
-        android:layout_marginBottom="62dp"
-        android:entries="@array/alcholAVG"
-        android:visibility="visible" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="56dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginBottom="64dp"
-        android:text="주량"
-        android:textSize="15dp"
-        android:visibility="visible" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="272dp"
-        android:layout_marginLeft="272dp"
-        android:layout_marginBottom="9dp"
-        android:text="확인" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="360dp"
-        android:text="추가정보"
-        android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textColor="#000"
+                android:textSize="11pt"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="233dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="214dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="닉네임" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="233dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="258dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="생년월일" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="301dp"
-        android:layout_height="63dp"
-        android:layout_below="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="26dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="PassWord" />
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ID"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="1dp"
-        android:text="회원가입"
-        android:textSize="20dp" />
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:ems="10"
+                        android:hint="ID"
+                        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="ID" />
+                    <Button
+                        android:id="@+id/check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="중복체크" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="24dp"
-        android:layout_toEndOf="@+id/editText2"
-        android:layout_toRightOf="@+id/editText2"
-        android:text="중복체크" />
+                </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="301dp"
-        android:layout_height="63dp"
-        android:layout_below="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="-20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="PassWord" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="233dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="174dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="이름" />
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="PW"
+                        android:textColor="#000"
+                        android:textSize="10pt" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginBottom="165dp"
-        android:ems="10"
-        android:inputType="phone"
-        android:text="전화번호" />
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="영문, 숫자 포함 8자리 이상"
+                        android:inputType="textPassword" />
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginBottom="10dp"
-        android:text="취소" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="238dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginBottom="88dp"
-        android:entries="@array/alchol"
-        android:visibility="visible" />
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="PW"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
 
-    <TextView
-        android:layout_width="56dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginBottom="90dp"
-        android:text="최애술"
-        android:textSize="15dp"
-        android:visibility="visible" />
+                    <EditText
+                        android:id="@+id/password2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="비밀번호를 다시 입력해 주세요."
+                        android:inputType="textPassword" />
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="이름"
+                        android:textColor="#000"
+                        android:textSize="10pt" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex)흉길동" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="닉네임"
+                        android:textColor="#000"
+                        android:textSize="10pt" />
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex)홍길동" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="생년월일"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
+
+                    <EditText
+                        android:id="@+id/birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex)19900102"
+                        android:inputType="date" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:text="전화번호"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex)01012341234"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="추가정보"
+                android:textColor="#000"
+                android:textSize="11pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="40dp"
+                        android:text="최애 술"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/alchol" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="87dp"
+                        android:layout_height="40dp"
+                        android:text="주량"
+                        android:textColor="#000"
+                        android:textSize="9pt" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/alcholAVG" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취소"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/okbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
